@@ -405,7 +405,7 @@ TStatId FLuaStats::CreateStatId(FName StatName, const TCHAR* StatDesc, bool bSho
         FStatGroup_STATGROUP_Lua::GetGroupCategory(),
         FStatGroup_STATGROUP_Lua::IsDefaultEnabled(),
         bShouldClearEveryFrame, InStatType,
-        nullptr, bCycleStat,
+        StatDesc, bCycleStat,
         FStatGroup_STATGROUP_Lua::GetSortByName(), MemRegion);
     return StatID;
 }
